@@ -1,0 +1,109 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 650px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-shadow: black 1px 0 10px;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-shadow: rgb(197, 9, 9) 1px 0 10px;
+}
+
+.hero-text .show {
+  text-decoration: none;
+  margin-left: 44%;
+  font-size: 1.1rem;
+  background: #fff;
+  margin-top: 2px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #222;
+  display: flex;
+  border-radius: 6px;
+  height: 41px;
+  width: 142px;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Mobile (SmartPhone) Size*/
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 90vh;
+  }
+
+  img {
+    height: 90vh;
+  }
+  .hero-text h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .hero-text p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: black;
+    margin-top: 1px;
+    font-style: bold;
+  }
+
+  .hero-text .show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-family: cursive;
+    font-size: 0.9rem;
+    font-weight: bolder;
+  }
+
+  .hero-text .show:hover {
+    background-color: #d7f8d7;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+
+  /*Tabs & apple i-pad Sizes*/
+  @media screen and (max-width: 900px) {
+  }
+}
